@@ -1,0 +1,17 @@
+--stack_templates_58a1f1f8f484dbdfe5801541390866636ee09328_4a545872-23f7-30a1-ab3e-81fdb101b091.sql
+--{"gen": "combine", "time": 0.5468454360961914, "template": "58a1f1f8f484dbdfe5801541390866636ee09328", "dataset": "stack_templates", "rows": 1}
+SELECT count(*)
+FROM badge AS b,
+question AS q1,
+site AS s,
+so_user AS u1,
+tag AS t1,
+tag_question AS tq1,
+comment AS c1,
+comment AS c2,
+post_link AS pl,
+site AS site,
+tag_question AS tq2,
+tag_question AS tag_question
+WHERE (b.name IN ('Autobiographer', 'Editor', 'Informed', 'Scholar', 'Student') AND q1.score <= 5 AND q1.score > 15 AND s.site_name IN ('academia', 'graphicdesign', 'scifi', 'softwareengineering', 'webapps') AND t1.name IN ('adobe-illustrator', 'adobe-photoshop', 'c#', 'google-sheets', 'graduate-school', 'marvel', 'star-trek', 'story-identification') AND u1.reputation >= 10 AND u1.reputation <= 100 AND site.site_name = 'tex' AND b.user_id = u1.id AND q1.id = tq1.question_id AND s.site_id = b.site_id AND s.site_id = q1.site_id AND s.site_id = t1.site_id AND s.site_id = tq1.site_id AND s.site_id = u1.site_id AND t1.id = tq1.tag_id AND c1.post_id = q1.id AND c1.site_id = q1.site_id AND pl.post_id_from = q1.id AND pl.site_id = q1.site_id AND pl.site_id = site.site_id AND tag_question.site_id = site.site_id AND tq1.tag_id = tq2.tag_id AND tq1.tag_id = tag_question.tag_id AND tq2.tag_id = tag_question.tag_id AND tq1.question_id = c1.post_id AND tq1.question_id = pl.post_id_from AND c1.post_id = pl.post_id_from AND tq2.site_id = c2.site_id AND tq2.site_id = tag_question.site_id AND tq2.site_id = q1.site_id AND tq2.site_id = site.site_id AND tq2.site_id = pl.site_id AND tq2.site_id = tq1.site_id AND tq2.site_id = c1.site_id AND c2.site_id = tag_question.site_id AND c2.site_id = q1.site_id AND c2.site_id = site.site_id AND c2.site_id = pl.site_id AND c2.site_id = tq1.site_id AND c2.site_id = c1.site_id AND tag_question.site_id = q1.site_id AND tag_question.site_id = pl.site_id AND tag_question.site_id = tq1.site_id AND tag_question.site_id = c1.site_id AND q1.site_id = site.site_id AND site.site_id = tq1.site_id AND site.site_id = c1.site_id AND pl.site_id = tq1.site_id AND pl.site_id = c1.site_id AND tq1.site_id = c1.site_id AND c2.post_id = pl.post_id_to AND c2.post_id = tq2.question_id AND pl.post_id_to = tq2.question_id AND tq2.site_id = s.site_id AND tq2.site_id = u1.site_id AND c2.site_id = s.site_id AND c2.site_id = u1.site_id AND s.site_id = tag_question.site_id AND s.site_id = site.site_id AND s.site_id = pl.site_id AND s.site_id = c1.site_id AND u1.site_id = tag_question.site_id AND u1.site_id = site.site_id AND u1.site_id = pl.site_id AND u1.site_id = c1.site_id AND tq2.tag_id = t1.id AND tag_question.tag_id = t1.id AND tq2.site_id = t1.site_id AND tq2.site_id = b.site_id AND c2.site_id = t1.site_id AND c2.site_id = b.site_id AND t1.site_id = u1.site_id AND t1.site_id = tag_question.site_id AND t1.site_id = q1.site_id AND t1.site_id = site.site_id AND t1.site_id = pl.site_id AND t1.site_id = b.site_id AND t1.site_id = tq1.site_id AND t1.site_id = c1.site_id AND u1.site_id = q1.site_id AND u1.site_id = b.site_id AND u1.site_id = tq1.site_id AND tag_question.site_id = b.site_id AND q1.site_id = b.site_id AND q1.site_id = tq1.site_id AND site.site_id = b.site_id AND pl.site_id = b.site_id AND b.site_id = tq1.site_id AND b.site_id = c1.site_id AND c1.date < c2.date)
+ order by count(*) desc LIMIT 100

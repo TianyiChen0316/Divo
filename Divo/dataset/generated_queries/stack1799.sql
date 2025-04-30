@@ -1,0 +1,20 @@
+--stack_templates_generated-d0942108-e27c-421d-8c16-329826a66bca_e99af881-2858-36b2-ba43-a85c852a9383.sql
+--{"gen": "combine", "time": 0.8215644359588623, "template": "generated-d0942108-e27c-421d-8c16-329826a66bca", "dataset": "stack_templates", "rows": 1}
+SELECT count(distinct q1.id)
+FROM comment AS c1,
+comment AS c2,
+post_link AS pl,
+question AS q1,
+tag_question AS tq1,
+tag_question AS tq2,
+question AS question,
+tag_question AS tag_question,
+account AS account,
+answer AS a1,
+site AS s1,
+so_user AS u1,
+tag AS t1,
+badge AS b1,
+badge AS b2,
+so_user AS so_user
+WHERE (s1.site_name = 'cstheory' AND t1.name = 'stomp' AND b1.name = 'API Beta' AND b2.name = 'Documentation Pioneer' AND c1.post_id = q1.id AND c1.site_id = q1.site_id AND pl.post_id_from = q1.id AND pl.site_id = q1.site_id AND tq1.question_id = q1.id AND tq1.site_id = q1.site_id AND tag_question.question_id = question.id AND tq1.tag_id = tq2.tag_id AND tq1.tag_id = tag_question.tag_id AND tq2.tag_id = tag_question.tag_id AND tq1.question_id = c1.post_id AND tq1.question_id = pl.post_id_from AND c1.post_id = pl.post_id_from AND tq2.site_id = c2.site_id AND tq2.site_id = question.site_id AND tq2.site_id = tag_question.site_id AND tq2.site_id = q1.site_id AND tq2.site_id = pl.site_id AND tq2.site_id = tq1.site_id AND tq2.site_id = c1.site_id AND c2.site_id = question.site_id AND c2.site_id = tag_question.site_id AND c2.site_id = q1.site_id AND c2.site_id = pl.site_id AND c2.site_id = tq1.site_id AND c2.site_id = c1.site_id AND question.site_id = tag_question.site_id AND question.site_id = q1.site_id AND question.site_id = pl.site_id AND question.site_id = tq1.site_id AND question.site_id = c1.site_id AND tag_question.site_id = q1.site_id AND tag_question.site_id = pl.site_id AND tag_question.site_id = tq1.site_id AND tag_question.site_id = c1.site_id AND pl.site_id = tq1.site_id AND pl.site_id = c1.site_id AND tq1.site_id = c1.site_id AND c2.post_id = pl.post_id_to AND c2.post_id = tq2.question_id AND pl.post_id_to = tq2.question_id AND a1.owner_user_id = u1.id AND a1.question_id = q1.id AND a1.site_id = q1.site_id AND a1.site_id = u1.site_id AND account.id = u1.account_id AND q1.site_id = s1.site_id AND t1.site_id = s1.site_id AND tq1.site_id = s1.site_id AND tq1.tag_id = t1.id AND tq2.tag_id = t1.id AND tag_question.tag_id = t1.id AND tq2.site_id = t1.site_id AND tq2.site_id = u1.site_id AND tq2.site_id = a1.site_id AND tq2.site_id = s1.site_id AND c2.site_id = t1.site_id AND c2.site_id = u1.site_id AND c2.site_id = a1.site_id AND c2.site_id = s1.site_id AND question.site_id = t1.site_id AND question.site_id = u1.site_id AND question.site_id = a1.site_id AND question.site_id = s1.site_id AND t1.site_id = u1.site_id AND t1.site_id = tag_question.site_id AND t1.site_id = q1.site_id AND t1.site_id = a1.site_id AND t1.site_id = pl.site_id AND t1.site_id = tq1.site_id AND t1.site_id = c1.site_id AND u1.site_id = tag_question.site_id AND u1.site_id = q1.site_id AND u1.site_id = pl.site_id AND u1.site_id = s1.site_id AND u1.site_id = tq1.site_id AND u1.site_id = c1.site_id AND tag_question.site_id = a1.site_id AND tag_question.site_id = s1.site_id AND a1.site_id = pl.site_id AND a1.site_id = s1.site_id AND a1.site_id = tq1.site_id AND a1.site_id = c1.site_id AND pl.site_id = s1.site_id AND s1.site_id = c1.site_id AND tq1.question_id = a1.question_id AND a1.question_id = pl.post_id_from AND a1.question_id = c1.post_id AND account.id = so_user.account_id AND b1.site_id = so_user.site_id AND b1.user_id = so_user.id AND b2.site_id = so_user.site_id AND b2.user_id = so_user.id AND b1.user_id = b2.user_id AND so_user.account_id = u1.account_id AND b1.site_id = b2.site_id AND c1.date < c2.date AND a1.creation_date >= q1.creation_date + '1 year'::interval AND b2.date > b1.date + '11 months'::interval)

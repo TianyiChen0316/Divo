@@ -1,0 +1,12 @@
+--stack_templates_generated-15486fe3-6d9a-4c8d-873a-46728daf3b4e_115e866e-1950-3e2a-bf92-c6227beae9a8.sql
+--{"gen": "erase", "time": 3.781782388687134, "template": "generated-15486fe3-6d9a-4c8d-873a-46728daf3b4e", "dataset": "stack_templates", "rows": 1}
+SELECT count(*)
+FROM answer AS a1,
+badge AS b,
+so_user AS u1,
+tag_question AS tq1,
+question AS q,
+tag AS t,
+tag_question AS tq
+WHERE (u1.reputation <= 100000 AND u1.reputation <= 100000 AND b.name IN ('Autobiographer', 'Editor', 'Informed', 'Scholar', 'Student') AND q.score > 12 AND q.score <= 0 AND t.name IN ('tables', 'tikz-pgf') AND a1.owner_user_id = u1.id AND b.user_id = u1.id AND b.site_id = u1.site_id AND b.site_id = a1.site_id AND b.site_id = tq1.site_id AND u1.site_id = a1.site_id AND u1.site_id = tq1.site_id AND a1.site_id = tq1.site_id AND a1.question_id = tq1.question_id AND a1.owner_user_id = b.user_id AND tq.question_id = q.id AND tq.tag_id = t.id AND tq.site_id = u1.site_id AND tq.site_id = t.site_id AND tq.site_id = a1.site_id AND tq.site_id = b.site_id AND tq.site_id = tq1.site_id AND tq.site_id = q.site_id AND u1.site_id = t.site_id AND u1.site_id = q.site_id AND t.site_id = a1.site_id AND t.site_id = b.site_id AND t.site_id = tq1.site_id AND t.site_id = q.site_id AND a1.site_id = q.site_id AND b.site_id = q.site_id AND tq1.site_id = q.site_id)
+ order by count(*) desc LIMIT 100
